@@ -5,7 +5,6 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
   } from "@/components/ui/card";
@@ -64,7 +63,7 @@ const ProductPage = () => {
         Product List
         {product.map((p) => (
 
-            <Card className='w-1/2 my-2'>
+            <Card className='w-1/2 my-2' key={p.id}>
             <CardHeader>
               <CardTitle>{p.title}</CardTitle>
               <CardDescription>{p.description}</CardDescription>
